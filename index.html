@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lab-1</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section id="header">
+			<h1>Fetch Api</h1>
+		</section>
+		<section id="random">
+			<h1>Get Cat Facts and User Data</h1>
+			<button id="fetch-cat-fact-button">Fetch Cat Fact</button>
+			<button id="fetch-user-button">Fetch User Data</button>
+			<button id="clear-button">Clear</button>
+			<div id="data-container"></div>
+			<div id="user-container"></div>
+		</section>
+
+		<section id="Anime">
+			<h2>Fetch Anime Data</h2>
+			<form id="anime-form">
+				<label for="limit">Limit:</label>
+				<input type="number" id="limit" name="limit" min="1" max="100" required />
+
+				<label for="query">String:</label>
+				<input type="text" id="query" name="query" required />
+
+				<label for="type">Type:</label>
+				<select id="type" name="type" required>
+					<option value="tv">TV</option>
+					<option value="movie">Movie</option>
+					<option value="ova">OVA</option>
+					<option value="special">Special</option>
+					<option value="ona">ONA</option>
+					<option value="music">Music</option>
+				</select>
+			</form>
+			<button id="fetch-anime-button">Fetch Anime Data</button>
+			<button id="clear-anime-button">Clear Anime Data</button>
+
+			<div id="anime-container"></div>
+		</section>
+
+		<script src="index.js"></script>
+	</body>
+</html>
